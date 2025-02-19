@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome Back !</h1><br>
+
+    <img src="images/without.png" alt="Image Not Found" height="300" >
+    <form id="loginForm">
+        <input type="text" id="uname" class="username" placeholder="Username" required><br>
+        <input type="password" id="pass" class="password" placeholder="Password" required><br>
+        <input type="submit" id="login" value="Login" name="Login"><br>
+    </form>
+    <script>
+         function login(event){
+            event.preventDefault();  
+            
+            let username = document.getElementById('uname').value;
+            let password = document.getElementById('pass').value;
+            
+            if(username && password) {
+                alert("Login Successful");
+                setTimeout(function() {
+                    document.body.classList.add("fade-out");
+                    setTimeout(function() {
+                        window.location.href = "homepage.html";
+                    }, 500);
+                }, 500);
+            }
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', login);
+    </script>
+</body>
+</html>

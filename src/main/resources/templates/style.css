@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(to right,#000000 ,#02144f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; 
+    transition: opacity 2s ease-in-out; 
+
+}
+body.fade-out { 
+    opacity: 0; 
+}
+h1{
+    
+    font-family: "Cinzel Decorative";
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: double;
+    text-shadow: #1a295c;
+}
