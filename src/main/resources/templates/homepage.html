@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Expenditure Maintenance System</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <h1>EMS</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <section class="hero">
+        <h2>Track and Manage Your Expenses Efficiently</h2>
+        <p>Log your daily expenses, set budgets, and generate reports to stay on top of your finances.</p>
+        <div class="card balance">
+            <h2>Total Balance</h2>
+            <p class="amount">₹ 2,548.00</p>
+            <div class="income-expense">
+                <p>Income: <span class="income">₹ 1,840.00</span></p>
+                <p>Expenses: <span class="expense">₹ 284.00</span></p>
+            </div>
+            <div class="card transactions">
+                <h2>Transactions History</h2>
+                <ul>
+                    <li><img src="icons/upwork.png" alt="Upwork"> Upwork <span class="income">+ ₹ 850.00</span></li>
+                    <li><img src="icons/transfer.png" alt="Transfer"> Transfer <span class="expense">- ₹ 85.00</span></li>
+                    <li><img src="icons/paypal.png" alt="Paypal"> Paypal <span class="income">+ ₹ 1,406.00</span></li>
+                    <li><img src="icons/youtube.png" alt="YouTube"> YouTube <span class="expense">- ₹ 11.99</span></li>
+                </ul>
+            </div>
+    
+        <button onclick="navigateTo('log-expense')">Log Expense</button>
+        <button onclick="navigateTo('set-budget')">Set Budget</button>
+        <button onclick="navigateTo('view-reports')">View Reports</button>
+        <div class="floating-btn">
+            <button onclick="addTransaction()">Add Transactions</button>
+        </div>
+    </section>
+    
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Secure User Authentication</li>
+            <li>Easy Expense Logging</li>
+            <li>Budget Management with Alerts</li>
+            <li>Data Visualization and Reports</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Expenditure Maintenance System. All rights reserved.</p>
+    </footer>
+    <script>
+        function navigateTo(page) {
+            alert('Navigating to ' + page);
+            // Implement actual navigation logic here
+        }
+        function addTransaction() {
+            alert('Add new transaction clicked!');
+        }
+    </script>
 </body>
 </html>
