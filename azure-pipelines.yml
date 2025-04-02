@@ -8,9 +8,6 @@ trigger:
 
 pool:
   name: 'Alvina'
-  demands:
-    - maven
-    - Agent.Version -equals 4.252.0
 steps:
 - task: Maven@3
   inputs:
